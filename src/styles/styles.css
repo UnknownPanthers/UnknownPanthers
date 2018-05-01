@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     margin: 15px;
-    background: indianred
+    /* background: indianred */
 }
 
 .col-4 {
@@ -15,4 +15,8 @@
 
 .container {
     margin: auto
+}
+
+.default {
+    background-color: gray; 
 }
