@@ -1,16 +1,16 @@
-const container = document.querySelector(".row");
+const container = document.querySelector(".container");
 
 const build = (card) => {
-    const div2 = document.createElement("div");
-    const div3 = document.createElement("div");
+    const divTop = document.createElement("div");
     const div = document.createElement("div");
+    const divCard = document.createElement("div");
+    divTop.classList = "row"
     div.classList = "col-4";
-    div3.classList = "row"
     div.textContent = "look at me! I'm a div!";
-    div2.textContent = card;
-    div.appendChild(div3)
-    div3.appendChild(div2)
-    container.appendChild(div)
+    divCard.textContent = card;
+    div.appendChild(divCard)
+    divTop.appendChild(div)
+    container.appendChild(divTop)
     // container.appendChild(div2)
 }
 
