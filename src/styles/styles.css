@@ -20,3 +20,15 @@
 .default {
     background-color: gray; 
 }
+
+.working {
+    background-color: goldenrod;
+}
+
+.done {
+    background-color: greenyellow;
+}
+
+.rework {
+    background-color: indianred; 
+}
