@@ -38,7 +38,7 @@ const form = (labelName, IdName, placeholderText, elementType) => {
 const labelForTaskName = document.createElement("label");
 labelForTaskName.setAttribute("for", IdName);
 labelForTaskName.textContent = labelName;
-labelForTaskName.classList = "col-sm-2 col-form-label";
+labelForTaskName.classList = "col-sm-10 col-form-label";
 
 divForFormGroup.appendChild(labelForTaskName)
 
@@ -57,17 +57,17 @@ inputField.setAttribute("class", "form-control form-control-success");
 divForInput.appendChild(inputField);
 }
  // Form Submit button created
-const formButtonSubmit = document.createElement("button")
-formButtonSubmit.classList = "btn btn-primary";
+/*const formButtonSubmit = document.createElement("button")
+//formButtonSubmit.classList = "btn btn-primary";
 formButtonSubmit.textContent = "Submit a New Task";
 formButtonSubmit.setAttribute("type", "submit");
-containerDivForForm.appendChild(formButtonSubmit)
+containerDivForForm.appendChild(formButtonSubmit)*/
 
 // Factory funnction called to make certain inputFields
 form("Task Name :", "TaskForm", "Add Task Name Here","input")
+form("Description :", "DescriptionBox", "Type a Task Description", "textarea")
 form("Due Date : ", "DueDateForm", "Insert Due Date", "input")
 form("Category :", "CategoryForm", "Add a Category Label", "input")
-form("Description :", "DescriptionBox", "Type a Task Description", "textarea")
 container.appendChild(containerDivForForm)
 
 // Basic bootstrap format for form

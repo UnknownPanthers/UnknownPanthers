@@ -44,6 +44,6 @@ const taskFactory = (taskName, description, dueDate, category) => {
     })
 }
 
-let taskDatabase = taskFactory("Do the thing", "We are doing all the things.", "5/4/2018", "medium")
 
-localStorage.setItem("taskFactory",JSON.stringify(taskDatabase))
+
+module.exports=taskFactory
