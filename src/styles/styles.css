@@ -18,7 +18,6 @@
 }
 
 .default {
-<<<<<<< HEAD
     background-color: gray;
 }
 
@@ -37,7 +36,6 @@
 
 #addTask {
     margin:15px;
-=======
     background-color: gray; 
 }
 
@@ -51,5 +49,4 @@
 
 .rework {
     background-color: indianred; 
->>>>>>> master
 }
