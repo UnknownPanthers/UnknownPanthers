@@ -39,9 +39,20 @@ const build = (card, id) => {
     container.appendChild(divTop)
 }
 
+$("#ModalTarget").on("hidden.bs.modal", function (e) {
+    $(this)
+      .find("input,textarea,select")
+         .val("")
+         .end()
+      .find("input[type=checkbox], input[type=radio]")
+         .prop("checked", "")
+         .end();
+  })
+
 build("fake", "fake");
 build("extra fake", "extra fake");
 build("fake ass bitch", "fake ass bitch");
 
 
-// document.querySelector(".col-4 .doing").push(object card)
+
+ // document.querySelector(".col-4 .doing").push(object card)

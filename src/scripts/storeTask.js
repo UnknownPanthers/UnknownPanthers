@@ -7,6 +7,7 @@ saveTaskButton = document.querySelector("#submitTask")
 
 // Event listener for the save task button - upon click
 saveTaskButton.addEventListener("click", storeTask, false)
+ParsedTaskDatabase = JSON.parse(localStorage.getItem("taskDatabase"))
 
 // Target each form element and save them each to a variable
 function storeTask() {
