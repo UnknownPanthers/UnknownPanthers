@@ -18,6 +18,7 @@
 }
 
 .default {
+<<<<<<< HEAD
     background-color: gray;
 }
 
@@ -36,4 +37,19 @@
 
 #addTask {
     margin:15px;
+=======
+    background-color: gray; 
+}
+
+.working {
+    background-color: goldenrod;
+}
+
+.done {
+    background-color: greenyellow;
+}
+
+.rework {
+    background-color: indianred; 
+>>>>>>> master
 }
