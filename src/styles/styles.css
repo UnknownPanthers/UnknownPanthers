@@ -18,6 +18,26 @@
 }
 
 .default {
+<<<<<<< HEAD
+    background-color: gray;
+}
+
+#panther {
+    text-align: center;
+    color: #d6ea3a;
+    margin: 25px;
+    background-image: url(https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Animals-PNG/Black_Panther_PNG_Clip_Art_Image.png?m=1515210902);
+    background-size: 20%;
+    background-color: purple;
+    padding: 10px;
+    border-style: solid, 100px;
+    border-color: plum
+
+}
+
+#addTask {
+    margin:15px;
+=======
     background-color: gray; 
 }
 
@@ -31,4 +51,5 @@
 
 .rework {
     background-color: indianred; 
+>>>>>>> master
 }
