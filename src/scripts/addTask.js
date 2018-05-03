@@ -56,7 +56,7 @@ inputField.setAttribute("class", "form-control form-control-success");
 
 divForInput.appendChild(inputField);
 }
- // Form Submit button created
+// Form Submit button created
 /*const formButtonSubmit = document.createElement("button")
 //formButtonSubmit.classList = "btn btn-primary";
 formButtonSubmit.textContent = "Submit a New Task";
