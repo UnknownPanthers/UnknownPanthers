@@ -1,3 +1,4 @@
+const archive = require("./archive")
 const container = document.querySelector(".container");
 
 function allowDrop(ev) {
@@ -38,6 +39,7 @@ function drop(ev) {
             ev.target.appendChild(document.getElementById(data));
         }
         document.getElementById(data).classList = "card done"
+        archive()
     }
 }
 
@@ -100,5 +102,4 @@ buildCard("fake ass bitch", "fake ass bitch");
              .prop("checked", "")
               .end();
       })
-
 // document.querySelector(".col-4 .doing").push(object card)
