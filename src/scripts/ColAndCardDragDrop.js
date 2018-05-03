@@ -12,14 +12,32 @@ function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
-    if (ev.target === document.getElementById("Doing") && document.getElementById(data).classList.contains("done")) {
-        document.getElementById(data).classList = "rework"
+    if ((ev.target === document.getElementById("Doing") || ev.target.parentNode === document.getElementById("Doing")) && document.getElementById(data).classList.contains("done")) {
+        if (ev.target.parentNode === document.getElementById("Doing")) {
+            ev.target.parentNode.appendChild(document.getElementById(data))
+        }
+        else {
+            ev.target.appendChild(document.getElementById(data));
+        }
+        document.getElementById(data).classList = "card rework"
     }
-    else if (ev.target === document.getElementById("Doing")) {
-        document.getElementById(data).classList = "working"
+    else if (ev.target === document.getElementById("Doing") || ev.target.parentNode === document.getElementById("Doing")) {
+        if (ev.target.parentNode === document.getElementById("Doing")) {
+            ev.target.parentNode.appendChild(document.getElementById(data))
+        }
+        else {
+            ev.target.appendChild(document.getElementById(data));
+        }
+        document.getElementById(data).classList = "card working"
     }
-    else if (ev.target === document.getElementById("Done")) {
-        document.getElementById(data).classList = "done"
+    else if (ev.target === document.getElementById("Done") || ev.target.parentNode === document.getElementById("Done")) {
+        if (ev.target.parentNode === document.getElementById("Done")) {
+            ev.target.parentNode.appendChild(document.getElementById(data))
+        }
+        else {
+            ev.target.appendChild(document.getElementById(data));
+        }
+        document.getElementById(data).classList = "card done"
     }
 }
 
@@ -63,7 +81,7 @@ const buildCard = (card, id) => {
         drag(event);
     }
     divCard.draggable = true;
-    divCard.classList = "default"
+    divCard.classList = "card default"
     divCard.id = id;
 
     // Querry selector To Do Div
